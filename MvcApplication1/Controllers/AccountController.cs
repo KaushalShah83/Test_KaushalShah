@@ -257,7 +257,7 @@ namespace MvcApplication1.Controllers
 
             if (User.Identity.IsAuthenticated || !OAuthWebSecurity.TryDeserializeProviderUserId(model.ExternalLoginData, out provider, out providerUserId))
             {
-                return RedirectToAction("Manage");
+                return RedirectToAction("Manage1");
             }
 
             if (ModelState.IsValid)
